@@ -10,13 +10,17 @@ import java.util.Scanner;
 public class LocalHost {
   public static void main(String[] args) {
 
+    // try {
+    // // getIPAddress();
+    // // getHostAddress();
+    // checkIPVersion();
+
+    // } catch (UnknownHostException e) {
+    // e.printStackTrace();
+    // }
+
     try {
-      getIPAddress();
-      getHostAddress();
-      checkIPVersion();
       networkDevices();
-    } catch (UnknownHostException e) {
-      e.printStackTrace();
     } catch (SocketException e) {
       e.printStackTrace();
     }
