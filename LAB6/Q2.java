@@ -20,6 +20,14 @@ public class Q2 {
 
     System.out.println("URL: " + url);
 
+    try (Scanner scanner = new Scanner(url.openStream(), encoding)) {
+      while (scanner.hasNextLine()) {
+        System.out.println(scanner.nextLine());
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
     
 
   }

@@ -7,7 +7,6 @@ import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
 import java.net.HttpCookie;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -44,7 +43,7 @@ class Q1 {
 
     String line;
     while ((line = br.readLine()) != null) {
-      // System.out.println(line);
+      System.out.println(line);
     }
 
     br.close();
