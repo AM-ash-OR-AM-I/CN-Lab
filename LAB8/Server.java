@@ -1,5 +1,3 @@
-package LAB7;
-
 import java.io.DataInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -8,6 +6,7 @@ public class Server {
   public static void main(String[] args) {
     try {
       ServerSocket ss = new ServerSocket(8080);
+      System.out.println("Server is running... at port 8080");
       Socket s = ss.accept();
       DataInputStream dis = new DataInputStream(s.getInputStream());
       String str = (String) dis.readUTF();
